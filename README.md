@@ -1,4 +1,4 @@
-# XP-inspired Landing Page (Projeto para processo seletivo)
+# XP-inspired Landing Page fictício (Projeto para processo seletivo)
 
 Este repositório contém um projeto front-end completo inspirado na experiência visual da XP Investimentos.
 
