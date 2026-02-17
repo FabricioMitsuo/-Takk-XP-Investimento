@@ -1,8 +1,7 @@
-# XP-inspired Landing Page (Projeto demonstrativo)
+# XP-inspired Landing Page (Projeto para processo seletivo)
 
 Este repositório contém um projeto front-end completo inspirado na experiência visual da XP Investimentos.
 
-## ⚠️ Aviso importante
 Este projeto **não é o site oficial da XP** e foi construído para fins de estudo/demonstração. Marcas, logotipos e conteúdos oficiais pertencem aos seus respectivos proprietários.
 
 ## Como rodar localmente
