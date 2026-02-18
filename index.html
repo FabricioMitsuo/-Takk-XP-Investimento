@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>XP Investimentos — Sua jornada financeira começa aqui</title>
+    <title>XP Investimentos | Invista no seu futuro</title>
     <meta
       name="description"
-      content="Site institucional inspirado na experiência digital da XP: investimentos, conteúdos e soluções para PF e PJ."
+      content="Recriação da experiência visual da XP Investimentos para desktop e mobile, com foco em performance, clareza e conversão."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,65 +19,90 @@
   <body>
     <header class="header">
       <div class="container nav">
-        <a class="brand" href="#">XP</a>
-        <nav>
+        <a class="brand" href="#" aria-label="XP Home">XP</a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="menu" class="menu-wrap">
           <ul class="menu">
             <li><a href="#investimentos">Investimentos</a></li>
             <li><a href="#assessoria">Assessoria</a></li>
+            <li><a href="#vantagens">Vantagens</a></li>
             <li><a href="#conteudos">Conteúdos</a></li>
-            <li><a href="#empresas">Empresas</a></li>
           </ul>
         </nav>
-        <a class="btn btn-primary" href="#abrir-conta">Abra sua conta</a>
+
+        <a class="btn btn-primary desktop-only" href="#abrir-conta">Abra sua conta</a>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="ticker" aria-label="Destaques de mercado">
+        <div class="container ticker-track">
+          <p>CDI 10,65% a.a.</p>
+          <p>Ibovespa +0,84%</p>
+          <p>Dólar R$ 5,02</p>
+          <p>Inflação IPCA 4,3%</p>
+          <p>Fundos exclusivos e carteira global</p>
+        </div>
+      </section>
+
+      <section class="hero" id="abrir-conta">
         <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">Investimentos para todos os perfis</p>
+          <div class="hero-copy">
+            <p class="eyebrow">Uma plataforma completa para investir</p>
             <h1>
-              Faça seu dinheiro trabalhar por você com uma experiência premium de
-              investimentos.
+              Construa patrimônio com estratégia, tecnologia e atendimento
+              especializado.
             </h1>
             <p class="subtitle">
-              Plataforma completa, atendimento especializado e conteúdos para
-              decisões mais inteligentes.
+              Abra sua conta sem custo e tenha acesso a produtos de renda fixa,
+              variável, fundos, previdência e investimentos internacionais em um
+              só lugar.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" id="abrir-conta" href="#">Abrir conta grátis</a>
-              <a class="btn btn-secondary" href="#conteudos">Ver conteúdos</a>
+              <a class="btn btn-primary" href="#">Abrir conta grátis</a>
+              <a class="btn btn-secondary" href="#conteudos">Explorar conteúdos</a>
             </div>
           </div>
-          <div class="hero-card">
-            <h3>Renda Fixa em destaque</h3>
-            <p class="yield">Até 118% do CDI</p>
-            <p>Aplicações a partir de R$ 100, com liquidez e segurança.</p>
-            <button class="btn btn-primary">Investir agora</button>
-          </div>
+
+          <aside class="hero-panel">
+            <h2>Carteira recomendada</h2>
+            <div class="metric">
+              <span>Rentabilidade em 12 meses</span>
+              <strong>+14,8%</strong>
+            </div>
+            <ul>
+              <li>✔ Renda fixa pós e pré-fixada</li>
+              <li>✔ Fundos multimercado selecionados</li>
+              <li>✔ Exposição internacional em dólar</li>
+            </ul>
+            <button class="btn btn-primary">Simular carteira</button>
+          </aside>
         </div>
       </section>
 
       <section id="investimentos" class="section">
         <div class="container">
-          <h2>Soluções de investimento</h2>
+          <h2>Produtos para todos os perfis</h2>
           <div class="cards-grid">
             <article class="card">
               <h3>Renda Fixa</h3>
-              <p>CDB, LCI, LCA, Tesouro Direto e debêntures para diversificar.</p>
+              <p>Invista em CDB, LCI, LCA, CRI/CRA e Tesouro Direto.</p>
             </article>
             <article class="card">
-              <h3>Fundos de Investimento</h3>
-              <p>Seleção robusta com estratégias multimercado, ações e crédito.</p>
+              <h3>Bolsa</h3>
+              <p>Ações, ETFs, fundos imobiliários e derivativos em uma só plataforma.</p>
             </article>
             <article class="card">
-              <h3>Bolsa e Derivativos</h3>
-              <p>Operações em ações, ETFs, opções e futuros com plataforma avançada.</p>
+              <h3>Fundos</h3>
+              <p>Curadoria especializada para estratégias em diversos cenários.</p>
             </article>
             <article class="card">
-              <h3>Internacional</h3>
-              <p>Invista no exterior com ativos globais e exposição em dólar.</p>
+              <h3>Previdência</h3>
+              <p>Planejamento de longo prazo com eficiência tributária.</p>
             </article>
           </div>
         </div>
@@ -86,59 +111,60 @@
       <section id="assessoria" class="section dark">
         <div class="container split">
           <div>
-            <h2>Assessoria sob medida para sua jornada</h2>
+            <h2>Assessoria que evolui com seus objetivos</h2>
             <p>
-              Conte com especialistas para montar estratégias de curto, médio e
-              longo prazo, alinhadas ao seu perfil de risco.
+              Um time de especialistas para apoiar sua tomada de decisão, com
+              recomendações táticas e visão de longo prazo para preservar e
+              multiplicar seu patrimônio.
             </p>
           </div>
           <ul class="benefits">
             <li>Planejamento financeiro personalizado</li>
-            <li>Rebalanceamento de carteira</li>
-            <li>Visão macro e recomendações táticas</li>
-            <li>Acompanhamento contínuo</li>
+            <li>Carteira orientada por perfil e metas</li>
+            <li>Revisões periódicas com cenários de mercado</li>
+            <li>Atendimento omnicanal para PF e PJ</li>
           </ul>
         </div>
       </section>
 
-      <section id="conteudos" class="section">
-        <div class="container">
-          <h2>Conteúdos para evoluir seu conhecimento</h2>
-          <div class="cards-grid">
-            <article class="card article">
-              <p class="tag">Relatório</p>
-              <h3>Panorama macroeconômico: o que esperar do próximo trimestre</h3>
-              <a href="#">Ler análise →</a>
+      <section id="vantagens" class="section">
+        <div class="container advantages">
+          <h2>Por que investir com a XP</h2>
+          <div class="adv-grid">
+            <article>
+              <h3>Arquitetura aberta</h3>
+              <p>Escolha entre milhares de produtos de diferentes emissores e gestores.</p>
             </article>
-            <article class="card article">
-              <p class="tag">Educação</p>
-              <h3>Guia completo para começar a investir com segurança</h3>
-              <a href="#">Acessar guia →</a>
+            <article>
+              <h3>Tecnologia e segurança</h3>
+              <p>Plataforma robusta com autenticação e proteção de ponta.</p>
             </article>
-            <article class="card article">
-              <p class="tag">Podcast</p>
-              <h3>Carteira inteligente: estratégias para cenários voláteis</h3>
-              <a href="#">Ouvir episódio →</a>
+            <article>
+              <h3>Conteúdo de qualidade</h3>
+              <p>Relatórios, podcasts, trilhas de aprendizado e análises diárias.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="empresas" class="section cta">
+      <section id="conteudos" class="section cta">
         <div class="container">
-          <h2>Soluções para empresas e alta renda</h2>
+          <h2>Receba insights exclusivos de mercado</h2>
           <p>
-            Banking, crédito, mercado de capitais e serviços estratégicos para
-            acelerar resultados com eficiência financeira.
+            Assine gratuitamente e acompanhe recomendações, tendências e relatórios
+            para investir com mais confiança.
           </p>
-          <a class="btn btn-primary" href="#">Falar com especialista</a>
+          <form class="newsletter" action="#">
+            <input type="email" placeholder="Seu melhor e-mail" required />
+            <button class="btn btn-primary" type="submit">Quero receber</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footer-grid">
-        <p>© 2026 Projeto demonstrativo inspirado na experiência visual da XP.</p>
+        <p>© 2026 Projeto demonstrativo inspirado no site xpi.com.br.</p>
         <a href="#">Política de Privacidade</a>
       </div>
     </footer>
